@@ -1,13 +1,13 @@
-import React from 'react'
-import Pagination from './Components/Pagination'
-import './App.css'
+import React from "react";
+import Pagination from "./Components/Pagination";
+import "./App.css";
 
 const App = () => {
   return (
     <div>
-      <Pagination/>
+      <Pagination />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

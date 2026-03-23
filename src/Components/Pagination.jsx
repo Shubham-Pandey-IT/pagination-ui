@@ -19,7 +19,10 @@ const Pagination = () => {
   const totalPages = Math.ceil(mockData.length / ITEMS_PER_PAGE);
 
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  const currentData = mockData.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  const current_Page_Data = mockData.slice(
+    startIndex,
+    startIndex + ITEMS_PER_PAGE,
+  );
 
   // Pagination buttons
 
@@ -39,7 +42,7 @@ const Pagination = () => {
   return (
     <div className="container">
       <div className="card-container">
-        {currentData.map((item) => (
+        {current_Page_Data.map((item) => (
           <div className="card" key={item.id}>
             <h3>{item.title}</h3>
             <p>{item.desc}</p>
