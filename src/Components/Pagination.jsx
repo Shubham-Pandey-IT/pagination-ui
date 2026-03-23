@@ -7,7 +7,7 @@ const Pagination = () => {
   for (let i = 1; i <= 30; i++) {
     mockData.push({
       id: i,
-      title: `Card ${i}`,
+      title: "Card " + i,
       desc: "This is a sample description about page  " + i,
     });
   }
